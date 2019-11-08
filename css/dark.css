@@ -1,0 +1,118 @@
+/* -- dark.css -- */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../resources/fonts/Roboto-Thin-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../resources/fonts/Roboto-Light-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../resources/fonts/Roboto-Bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: #444;
+  margin: 15px;
+  text-align: justify;
+  text-decoration: none;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 0.75em;
+  letter-spacing: 0.4px;
+  color: #FEFEFE;
+  line-height: 1.3em; /* set line height to smaller than usual */
+}
+.row::after {
+    content: "";
+    clear: left;
+    display: table;
+    overflow: hidden;
+}
+[class*="col-"]{
+  position: relative;
+  float: left;
+  padding: 10px;
+  width: 100%;
+  clear:  left;
+}
+.main_container{
+  margin: 5px;
+  max-width: 650px;
+  justify-content: center;
+}
+.header {
+  color: #17BCFD;
+  font-weight: 100;
+  letter-spacing: 0.75px;
+  font-size: 3em;
+  padding: 20px 0px;
+}
+.header.sub {
+  color: inherit;
+  font-size: 1.2em;
+  padding: 0px 0px 15px;
+  text-indent: 2%;
+}
+/* // navbar // */
+.topnav {
+  color: #17BCFD;
+  overflow: hidden;
+  font-weight: 200;
+  letter-spacing: 0.6px;
+  font-size: 1.5em;
+  text-transform: lowercase;
+}
+/* navbar links */
+.topnav a {
+  color: #17BCFD;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  padding: 5px;
+}
+.topnav a:visited{
+  color: inherit;
+}
+.topnav a:active {
+  background-color: #41839D;
+  color: #FFF;
+}
+/* navbar links on hover */
+.topnav a:hover{
+  background-color: #41839D;
+  color: #FFF;
+}
+.footer{
+  background-color: #676767;
+  color: #FFF;
+  margin: 5px;
+  padding: 20px;
+}
+
+.code{
+  indent: 5%;
+}
+/*
+    mobile handling
+    basic 3 col layout
+*/
+
+@media only screen and (min-width: 650px){
+  .col-1{width: 33.33%;}
+  .col-2{width: 66.66%;}
+  .col-3{width: 100%;}
+}
