@@ -1,0 +1,4 @@
+@charset "UTF-8";
+
+@import './dark_new.css' (prefers-color-scheme: dark);
+@import './light_new.css' (prefers-color-scheme: light)
