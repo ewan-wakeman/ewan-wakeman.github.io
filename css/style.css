@@ -1,4 +1,76 @@
 @charset "UTF-8";
 
-@import './dark_new.css' (prefers-color-scheme: dark);
-@import './light_new.css' (prefers-color-scheme: light)
+/* enable light/dark modes */
+@import './dark.css' (prefers-color-scheme: dark);
+@import './light.css' (prefers-color-scheme: light);
+
+/* define font stack */
+
+html{
+  font-size: 10pt;
+  font-weight: 200;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* optimiesed for mobile but when in desktop */
+@media only screen and (min-width: 650px){
+  html{
+    font-size: 18px;
+  }
+}
+
+h1, h2, h3, h4{
+  font-weight: 100;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header{
+  font-size: 2em;
+}
+.sub{
+  font-size: 1.5em;
+}
+.main_container{
+  display: block;
+  max-width: 850px;
+  margin: auto;
+  padding: 20px 0px;
+  float: center;
+}
+
+/* navigation at top of page */
+.topnav{
+  display: flex;
+  overflow: hidden;
+  letter-spacing: 0.6px;
+  font-size: 1.3em;
+  text-transform: lowercase;
+  text-decoration: none;
+  margin: 10px 0px;
+}
+
+.topnav a {
+  text-align: center;
+  float: left;
+  padding: 7px;
+}
+
+.content{
+  padding: 7px 15px;
+}
+
+.footer{
+  padding: 2rem .75rem;
+  margin: 15px 0px;
+}

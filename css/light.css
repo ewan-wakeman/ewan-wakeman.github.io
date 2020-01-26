@@ -1,23 +1,22 @@
-
 html {
-  color: #FFFFFF80;
-  background: #222629;
-}
-
-h1, h2, h3, h4{
-  color: #ffffff80;
+  color: #22262980;
+  background: #fff;
 }
 
 a {
   color: #ffffff;
+  text-decoration: none;
 }
 
+h1, h2, h3, h4{
+  color: #222629;
+}
 a:hover {
   color: #ffffff80;
 }
 
 .header{
-  color: #17BCFD70;
+  color: #41839D;
 }
 
 /* // navbar // */
@@ -26,7 +25,7 @@ a:hover {
 }
 /* navbar links */
 .topnav a {
-  color: #17BCFD60;
+  color: #41839D;
 }
 .topnav a:visited{
   color: inherit;
