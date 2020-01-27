@@ -21,14 +21,14 @@ a:hover {
 
 /* // navbar // */
 .topnav{
-  background: #00000030;
+  background: #00102010;
 }
 /* navbar links */
 .topnav a {
   color: #41839D;
 }
 .topnav a:visited{
-  color: inherit;
+  color: #41839D;
 }
 .topnav a:active {
   background-color: #17BCFD60;
@@ -45,5 +45,5 @@ a:hover {
 }
 
 .footer{
-  background: #00000030;
+  background: #00102010;
 }

@@ -10,19 +10,16 @@
   <script type = 'text/javascript'>
   $(document).ready(function(){
     $('.topnav').load('resources/topnav.html');
+    $('#header_main').load('resources/header.html')
+    $('#subheading').load('resources/tagline.html')
   });
   </script>
 </head>
 <body>
   <div class = main_container>
-    <div class = "header">
-      // Ewan Wakeman //
-    </div>
-    <div class = "header sub">
-      Thoughts & Analysis
-    </div>
-    <div class = topnav>
-    </div>
+    <div class = "header", id = 'header_main'></div>
+    <div class = "header sub", id = "subheading"></div>
+    <div class = topnav></div>
     <div class= content>
       <h2>Blog</h2>
       <p>

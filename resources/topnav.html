@@ -1,10 +1,28 @@
 
 <html>
 <head>
+<script type = 'text/javascript'>
+$(document).ready(function(){
+  $('#twitter')
+    .html(sel_theme === 'light' ? '<a href = "https://twitter.com/ewan_wakeman" target = "_blank"><img src = "../assets/icons/twitter.svg" width = "18px" id = twitter_icon/></a>' : '<a href = "https://twitter.com/ewan_wakeman" target = "_blank"><img src = "../assets/icons/twitter_dark.svg" width = "18px" id = twitter_icon /></a>')
+  $('#github')
+    .html(sel_theme === 'light' ? '<a href = "https://github.com/ewan-wakeman" target = "_blank"><img src = "../assets/icons/github.svg" width = "18px" id = github_icon/></a>' : '<a href = "https://github.com/ewan-wakeman" target = "_blank"><img src = "../assets/icons/github_dark.svg" width = "18px" id = github_icon /></a>')
+  $('#theme')
+    .html(sel_theme === 'light' ? '<img src = "../assets/icons/theme_tog.svg" width = "18px" id = theme_icon/>' : '<img src = "../assets/icons/theme_tog_dark.svg" width = "18px" id = theme_icon />' )
+    .attr("onClick", "switch_theme()")
+  $('#github_icon').attr("href", "https://github.com/ewan-wakeman")
+})
+</script>
 </head>
 <body>
-<span><a href = "index.html">Home</a></span>
-<span><a href = "blog.html">Blog</a></span>
-<span><a href = "about.html">About</a></span>
-</body>
+  <div class = nav>
+    <span><a href = "index.html">Home</a></span>
+    <span><a href = "blog.html">Blog</a></span>
+    <span><a href = "about.html">About</a></span>
+  </div>
+  <div class = social>
+    <div class = icons, id = 'twitter'></div>
+    <div class = icons, id = 'github'></div>
+    <div class = icons, id = 'theme'></div>
+  </div>
 </html>

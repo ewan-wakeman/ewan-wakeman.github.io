@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
-/* enable light/dark modes */
+/*
+  enable light/dark modes
+  removed because I now handle this with js
+ */
+/*
 @import './dark.css' (prefers-color-scheme: dark);
 @import './light.css' (prefers-color-scheme: light);
+*/
+
+/* use the Inter font if Helvetica isn't availiable */
+@import url('https://rsms.me/inter/inter.css');
 
 /* define font stack */
 
@@ -10,7 +18,7 @@ html{
   font-size: 10pt;
   font-weight: 200;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Inter', sans-serif;
 }
 
 /* optimiesed for mobile but when in desktop */
@@ -43,7 +51,7 @@ a {
 }
 .main_container{
   display: block;
-  max-width: 850px;
+  max-width: 650px;
   margin: auto;
   padding: 20px 0px;
   float: center;
@@ -52,20 +60,34 @@ a {
 /* navigation at top of page */
 .topnav{
   display: flex;
+  justify-content: space-between;
   overflow: hidden;
+  margin: 0px;
+}
+
+.nav {
   letter-spacing: 0.6px;
   font-size: 1.3em;
   text-transform: lowercase;
   text-decoration: none;
-  margin: 10px 0px;
 }
 
-.topnav a {
-  text-align: center;
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0px 10px;
+}
+
+.icons{
+  display: block;
+}
+
+.nav a {
   float: left;
+  text-align: center;
   padding: 7px;
 }
-
 .content{
   padding: 7px 15px;
 }
