@@ -39,12 +39,12 @@ img {
 }
 
 a {
-  color: #ffffff;
   text-decoration: none;
 }
 
 .header{
   font-size: 2em;
+  padding: 0px 0px 5px 5px;
 }
 .sub{
   font-size: 1.5em;
@@ -63,6 +63,7 @@ a {
   justify-content: space-between;
   overflow: hidden;
   margin: 0px;
+  align-items: center;
 }
 
 .nav {
@@ -81,6 +82,7 @@ a {
 
 .icons{
   display: block;
+  margin: 0px 5px;
 }
 
 .nav a {
